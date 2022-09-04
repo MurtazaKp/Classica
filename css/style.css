@@ -1,0 +1,900 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+  
+}
+a{
+    text-decoration: none;
+
+}
+ul li{
+    list-style: none;
+}
+
+.head{
+    background-color:#141110 ;
+    height: 100px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 0 10px;
+    position:sticky;
+    top:0px;
+    z-index: 2;
+
+}
+
+.head img {
+  width: 60%;  
+}
+
+.head div i{
+    font-size: 25px;
+    margin: 0 0 0 10px;
+    color: #fff;
+}
+
+.head ul{
+    display: none;  
+}
+
+
+.herosection{
+
+background:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.8)),url(../images/13.jpg) center;
+background-size:250% 150%;  
+
+
+display: flex;
+justify-content: center;
+align-items: center;
+
+padding: 100px 0 50px 0 ;
+
+color: #fff;
+}
+
+
+.herosection div{
+    
+    text-align: center;
+    
+
+}
+.herosection h1{
+    width: 50%;
+    text-align: center;
+    margin: 0px auto;
+}
+.herosection span{
+    color: #E1901B;
+}
+
+.herosection div h4,h1,p {
+    padding: 0 0 20px 0 ;
+    
+}
+.herosection button{
+    padding: 10px 20px;
+    background-color: #E1901B;
+    color: #fff;
+    border: 1px solid #E1901B;
+    
+}
+.herosection i{
+    transition: 1s;
+}
+.herosection button:hover i{
+    transform: translate(10px,0);
+    
+}
+.gallary{
+    background-color: #141515;
+    display: flex;
+    flex-direction: column;
+}
+.gallary .parent,.gallary .parent1,.gallary .parent2 {
+    position: relative;
+    padding: 20px;
+    color: #fff;
+    
+    text-align: center;
+    
+}
+
+.gallary .parent .img-holder{
+    background: url(../images/img-hold.jpg);
+    height: 300px;
+    background-size: 100% 100%;
+    transition: 1s;
+
+}
+.gallary .parent:hover .img-holder{
+ transform: scale(1.1); 
+ outline: 7px solid white;
+}
+
+
+.gallary .parent h4{
+    position: absolute;
+    top:30px;
+    left: 25px;
+    z-index: 1;  
+    font-size: 20px; 
+}
+.gallary .parent h3{
+    position: absolute;
+    z-index: 1;
+    top:65px;
+    left: 25px;
+    font-size: 30px;
+    
+}
+
+.gallary .parent1 .img-holder1{
+background: url(../images/crunchu\ fries.jpg);
+background-size: 100% 100%;
+height: 150px;
+transition: 1s;
+}
+.gallary .parent1 h4{
+    position: absolute;
+    top:40px;
+    left: 25px;
+    z-index: 1;  
+    font-size: 20px;
+}
+.gallary .parent1 h3{
+    position: absolute;
+    z-index: 1;
+    top:60px;
+    left: 5px;
+    font-size: 25px;
+    padding: 20px;
+    
+}
+.gallary .parent1:hover .img-holder1{
+    transform: scale(1.1);
+    outline: 7px solid white;
+}
+.gallary .parent2 .img-holder2 {
+    background: url(../images/cake.jpg);
+    background-size: 100% 100%;
+    height: 150px;
+    transition: 1s;
+    
+
+}
+.gallary .parent2 h4{
+    position: absolute;
+    top:30px;
+    left: 25px;
+    z-index: 1;  
+    font-size: 20px;
+}
+
+.gallary .parent2 h3{
+    position: absolute;
+    z-index: 1;
+    top:60px;
+    left: 25px;
+    font-size: 25px;
+   
+}
+.gallary .parent2:hover .img-holder2{
+    transform: scale(1.1);
+    border: 7px solid white;
+}
+.picks{
+    text-align: center;
+    background-color: #141110;
+    display: flex;
+    flex-direction: column;
+}
+.picks h4{
+    font-size: 20px;
+    color: #fff;
+    padding: 20px 0 10px 0;
+    
+}
+.picks h3{
+    font-size: 30px;
+    color: #fff;
+}
+.picks p{
+    padding: 20px;
+    color: #fff;
+    padding: 0 0 20px 0 ;
+}
+.picks .icons{
+    
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    font-size: 25px;
+    
+}
+.picks .icons div{
+    margin: 20px 0 30px 0;
+}
+
+.picks .icons div:hover i {
+    color: #e1901b; 
+}
+.picks .icons div:hover h5 {
+    color: #E1901B;
+}
+.picks .food {
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+
+.picks .food div p {
+    padding: 10px 20px;
+
+}
+.picks .food div .dis {
+    width: 80%;
+    margin: 0 auto;
+    transition: 1s;
+    display: flex;
+    position: relative; 
+    justify-content: center;
+    align-items: center;
+}
+
+.picks .food div .dis img{
+    width: 80%;
+}
+
+
+.picks .food div h4{
+    color: #E1901B;
+    
+}
+.picks .food .icons4{
+    width: 50%;
+    display: none;   
+}
+
+.picks .food .dis:hover .icons4  {
+    display: flex;
+    position: absolute;
+    /* top:80px;
+    left: 50px; */
+    
+
+}
+.picks .food .dis:hover{
+    background-color: rgba(0,0,0,0.4);
+}
+.picks .food .dis .icons4 div:hover{
+    background-color: #E1901B;
+}
+.picks .food .icons4 div{
+    padding:  0 10px;
+    margin: 0 0 0 10px ;
+    
+}
+
+.deal{
+   display: flex;
+   transition: 1s;
+    background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.7)),url(../images/cta.jpg);
+    background-size: 100% 100%;
+    flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   margin: 0 0 0 0 ;
+   color: #fff;
+   padding:0 0  20px 0
+
+}
+.deal .items{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin:  0 20px 0 0 ;
+
+}
+.deal .items div{
+    margin: 0 20px 0 20px ;
+    padding: 0 0 30px 0 ;
+    
+}
+
+.deal .items div .big{
+    font-size: 30px;
+
+}
+.deal h3{
+    padding: 10px;
+}
+.deal h2{
+    padding: 0 0 30px 0 ;    
+}
+.deal sup{
+    font-size: 20px;
+}
+.deal  .rs{
+    font-size: 40px;
+    color: #E1901B;
+
+}
+.deal button{
+    padding: 10px 20px;
+    background-color: #E1901B;
+    color: #fff;
+    border: 1px solid #E1901B;
+}
+
+.backbone{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #141110;
+    color: #fff;
+   
+    text-align: center;
+}
+.backbone h3,.picks h4,.deal h3{
+    padding: 20px 0;
+    display: inline-block;
+    width: 100%;
+    margin: 30px auto 15px;
+    text-align: center;
+
+
+}
+.backbone .our::before,.backbone .our::after,.picks .our::before,.picks .our::after,.deal .our::before,.deal .our::after,.blog .our::before,.blog .our::after{
+    content: "";
+    width: 10%;
+    height: 5px;
+    background-color: #E1901B;
+    display: inline-block;
+    margin: 0 10px 3px;
+}
+
+.backbone h2{
+    padding: 0 0 20px 0 ;
+}
+.backbone p,.backbone .one p{
+    padding: 0 20px;
+}
+
+.backbone .p::before{
+    content:open-quote;
+    display: block;
+    font-size: 60px;
+    color: #E1901B;
+
+}
+.backbone .num .one:hover,.backbone .num .two:hover,.backbone .num .three:hover{
+    background-color: #E1901B;
+}
+
+.backbone div:hover .p::before{
+    color: #fff;
+}
+
+.backbone .two ,.three{
+    display: none;
+}
+
+.backbone .one,.backbone .two,.backbone .three{
+  
+    margin: 30px 0  0 0;
+    transition: 1s;
+}
+.backbone .one img,.backbone .two img,.backbone .three img{
+    width: 30%;
+    border-radius: 100%;
+    padding: 20px 0;
+}
+
+
+.backbone .one h3,.backbone .two h3,.backbone .three .h3{
+    font-size: 26px;
+}
+
+.backbone .arrow{
+    display: flex;
+    margin: 20px;
+    justify-content: center;
+}
+.backbone .arrow div:hover{
+    background-color: #e1901b;
+    border: 1px solid #E1901B;
+}
+.backbone .spl{
+    background-color:#141110;
+    padding: 10px;
+    border: 1px solid white;
+    margin: 0 20px;
+    font-size: 20px;
+
+}
+.backbone .arrow  a{
+    color: #fff;
+}
+
+.membership{
+  
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    
+    background-color: #141110;
+}
+.membership div{
+   margin: 30px 0 40px;
+}
+.membership .gold,.membership .silver{
+    background-color: #ffe4be;
+    margin: 20px 10px;
+    padding: 0 0 40px 0;
+    position: relative;
+}
+.membership .silver i,.membership .gold i{
+    margin: 0 0 0 10px;
+    transition: 1s;
+}
+.membership .silver button:hover i,.membership .gold button:hover i{
+
+    transform: translate(10px);
+}
+
+
+.membership .silver img{
+    display: none;
+}
+.membership .gold img{
+    display: none;
+}
+.membership .gold h3,.membership .silver h3{
+    padding: 25px;
+    color: #E1901B;
+
+}
+.membership .gold h2,.membership .silver h2{
+    padding: 20px 25px ;
+    font-size: 30px;
+    color:#e1901b ;
+}
+.membership .gold p ,.membership .silver p{
+    padding: 0 25px 40px;
+    color:#717e7e ;
+}
+.membership .gold button,.membership .silver button{
+    padding: 15px 40px;
+    margin: 0 0 0 25px;
+    background-color: #e1901b;
+    color: #fff;
+    border: 1px solid #E1901B;
+}
+
+.membership .silver{
+    background-color:#f5f5f5 ;
+}
+.membership .silver h2{
+    color:#8d8d8d;
+}
+.membership .silver h3{
+color:#8d8d8d ;
+}
+
+.membership .silver button{
+    background-color: #c0c0c0;
+    color: #fff;
+    border: 1px solid #c0c0c0;
+}
+
+.blog{
+    display: flex;
+
+    flex-direction: column;
+    text-align:center;
+    
+    background-color: #141110;
+    color: #fff;
+
+
+}
+.blog div {
+    width: 90%;
+    margin: 0 auto;
+    
+}
+
+.blog .vlog{
+    margin: 0 auto;
+}
+
+
+.blog h3{
+    margin: 50px 0 20px;
+}
+
+.blog h2{
+    padding: 20px 0;
+}
+
+.blog p{
+    padding: 20px 0 40px;
+}
+.blog div{
+    
+    margin: 0 0 20px  0;
+}
+.blog div img{
+    width: 100%;
+    margin: 10px 0 0 0 ;
+    transition: 1s;
+    
+}
+.blog .vlog img:hover{
+    transform: scale(1.1);
+    outline: 7px solid white;
+}
+.blog div p{
+    padding: 0;
+}
+.blog div h3{
+    padding: 0 20px;
+    text-transform: capitalize;
+}
+.blog div .para{
+    padding: 0 20px 20px;
+}
+
+.newsletter{
+    background: url(../images/bg.jpg);
+    background-size: 100% 100%;
+    display: flex;
+    justify-content: center;
+    height: 400px;
+    align-items: center;
+    text-align: center;
+    
+}
+
+.newsletter div{
+    background-color: #141110;
+   width: 90%;
+   color: #fff;
+   
+   
+}
+
+
+.newsletter div h2{
+    padding: 20px 0;
+}
+.newsletter div p{
+    padding: 10px 10px 30px;
+
+}
+
+.newsletter div input[type='email']{
+    padding: 10px 20px;
+    margin: 5px 0;
+}
+.newsletter div input[type='submit']{
+    padding: 10px 40px ;
+    width: 73%;
+    background-color: #e1901b;
+    color: #fff;
+    border: 1px solid #e1901b;
+    font-size: 18px;
+    margin: 20px 0 30px ;
+}
+
+.footer{
+    background-color: #141110;
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    text-align: center;
+    
+
+}
+.footer .top{
+    margin: 30px 0 ;
+}
+.footer div .ico,.picks {
+    display: flex;
+    justify-content: space-evenly;  
+}
+.footer div .icon3:hover {
+    background-color: #E1901B;
+
+}
+
+.footer .icon3,.picks .food .icons4 div{
+    background: #1f1f1f;
+    border-radius: 100%;
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+.footer .top img{
+    padding: 10px 20px;
+}
+
+.footer .top p{
+    padding: 10px 20px 30px;
+}
+
+.footer ul{
+    padding: 20px 0 20px 0;
+}
+
+.footer ul li{
+    margin: 10px 0 0 0 ;
+}
+.footer .list ul li a{
+    color: #445f6b;
+    
+}
+.footer .list ul li:hover a{
+    color: #E1901B;
+}
+
+.footer .col .row img{
+    width: 80%;
+    
+}
+
+.footer .col{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.footer .col .row{
+    display: flex;
+    margin: 20px 0  30px 0;
+}
+
+@media screen and (min-width:768px){
+
+    .head{
+        justify-content: space-between;
+        padding:  0 50px;
+    }
+    .head img{
+        width:30%;
+        justify-content: space-between;
+    }
+    
+    .herosection{
+        height: 500px;
+        align-items: center;
+    }
+    .herosection h1{
+        font-size: 40px;
+    }
+
+    .herosection p{
+        width: 50%;
+        margin: 0 auto;
+        font-size: 20px;
+    }
+    
+    .gallary div img{
+        width: 100%;
+    }
+    .gallary .parent,.parent1,.parent2{
+        margin: 0 auto;
+        width: 90%;
+       
+        
+    }
+    .gallary .parent .img-holder{
+        height: 500px;
+    }
+    .gallary .parent1 .img-holder1{
+        height: 300px;
+    }
+    .gallary .parent2 .img-holder2{
+        height: 300px;
+    }
+
+    .picks .icons{
+        flex-direction: row;
+        justify-content: space-evenly;
+        font-size: 30px;
+        margin: 30px 0;
+    }
+
+    .picks .food{
+        flex-direction: row;
+        align-items: baseline;
+        padding: 30px 0;
+    }
+
+    
+       
+    
+    .picks .food .dis:hover .icons4  {
+        margin: 0 50px  0 0;
+    }
+    
+    .num{
+        display: flex;
+    }
+
+    .backbone .num .two{
+        display: block;
+        
+    } 
+
+    .backbone .num div{
+       margin: 10px 20px ;
+    }
+    
+    .membership{
+        flex-direction: row;
+    }
+    
+
+  
+    .vlog{
+        display: flex;
+      
+        
+        
+    }
+    .vlog div{
+        margin: 10px 10px;
+    }
+    .newsletter div input[type='email'] {
+        width: 67%;
+    }
+
+    .footer .top .ico {
+        justify-content: space-evenly;
+        width: 40%;
+        margin: 0 auto;
+
+        
+    }
+
+    .footer .list{
+        display: flex;
+        justify-content: space-evenly;
+        margin: 20px 0;
+    }
+}
+
+@media screen and (min-width:1024px){
+    .head img{
+        width: 20%;
+    }
+
+    .head ul {
+        display: block;
+        color: #c0c0c0;
+    }
+    .head ul li a{
+        color: #fff;
+    }
+    .head ul li{
+        display: inline-block;
+        margin: 0 10px ;
+        font-size: 20px;
+    }
+    .head ul li:hover a{
+        color: #E1901B;
+    }
+    .head div .menu{
+        display: none;
+    }
+    .herosection{
+     justify-content: center;
+     background-size: 100% 100%;
+    }
+
+    .gallary {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        padding: 30px 0;
+        
+    }
+
+    .gallary .parent{
+        width: 40%;
+        height:500px;
+        margin: 0;
+    }
+    .gallary .parent .img-holder{
+        width: 100%;
+        height: 490px;
+    }
+    .gallary .seprate{
+        display: flex;
+        flex-direction: column;
+        width: 35%;
+        
+    }
+    .gallary .seprate .parent1,.gallary .seprate .parent2{
+        height: 250px;   
+    }
+
+    .gallary .seprate .parent1 .img-holder1{
+        height: 100%;
+    }
+    .gallary .seprate .parent2 .img-holder2{
+        height: 100%;
+    }
+    
+
+    .picks .food div{
+        width: 30%;   
+    }
+    .picks .food .dis:hover .icons4  {
+       margin: 0;
+    
+    }
+    .backbone .three{
+        display: block;
+    }
+    .membership .silver img{
+        display: block;
+        position: absolute;
+        width: 40%;
+        bottom: -50px;
+        right: -50px;
+    }
+    .membership .gold img{
+        display: block;
+        position: absolute;
+        width: 40%;
+        bottom: -50px;
+        right: -50px;
+    }
+    .newsletter div{
+        width:40%
+    }
+  
+
+    .footer{
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: baseline;
+    }
+    .footer .top,.footer .col{
+        width: 25%;
+        
+    }
+
+    .footer .list ul{
+        margin: 0 25px ;
+    }
+    .footer .col{
+        width: 30%;
+    }
+
+    .footer .col .row{
+        width:100%;
+    }
+    .footer .top .ico{
+        width: 100%;
+    }
+}
+
